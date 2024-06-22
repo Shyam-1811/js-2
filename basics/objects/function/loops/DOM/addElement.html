@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lang">
+        <li>javascript</li>
+    </div>
+</body>
+<script>
+    // function addElement(LangName) {
+    //     const li = document.createElement("li")
+    //     li.appendChild(document.createTextNode(langName))
+    //    const all=  document.querySelector(".lang").append(li)
+    // }
+    // addElement("python")
+    function appendElement (langName) {
+            var element = document.createElement("li");
+            element.appendChild(document.createTextNode(langName));
+            document.querySelector(".lang").append(element)
+            // document.body.appendChild(element);
+}
+appendElement("python");
+appendElement("golang");
+appendElement("os");
+appendElement("CSS");
+// 
+</script>
+</html>
