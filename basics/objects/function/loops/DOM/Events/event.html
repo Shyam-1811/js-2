@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js </title>
+</head>
+<body>
+                <H1>Image Galleria</H1>
+                <div id="Image" style="display: flex; justify-content: space-evenly;">
+                    <li>
+                     <img id="github" src="GitHub-Mark-ea2971cee799.png" alt="github" style="height: 200px; width: 200px;">
+                    </li>
+                    <li>
+                     <img id="linkedin" src="download.png" alt="linkedin">
+                    </li>
+                    <li>
+                     <img id="instagram" src="insta.jpeg" alt="instagram">
+                    </li>
+                    <li><a href="https://www.google.co.uk/" id="google">Google</a></li>
+                    </div>
+</body>
+<script>
+//   document.getElementById("github").addEventListener('click',function(){
+//     alert("clicked on github")
+//   })
+// document.getElementById("Image").addEventListener('click', function(e){
+//     console.log("image clicked");
+//     // alert(" clicked image")
+// },false)
+// document.getElementById("linkedin").addEventListener('click', function(e){
+//     console.log("linkedin clicked");
+//     e.preventDefault()
+//     e.stopPropagation()
+//     // alert(" clicked linkedin")
+// },false)
+//  remove all elements 
+document.getElementById("Image").addEventListener('click', function(e){
+    console.log(e.target.parentNode);
+    alert("Images are clicked")
+  let removeIt = e.target.parentNode
+  removeIt.remove()
+},false)
+
+
+</script>
+</html>
