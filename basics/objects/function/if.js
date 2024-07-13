@@ -1,3 +1,4 @@
+// array in if statements
 const myArray = [];
 if (myArray.length === 0) {
     console.log("true")

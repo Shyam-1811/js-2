@@ -1,7 +1,8 @@
 // +++ filter in js
 let number = [1, 2, 3, 4, 5, 6, 7]
- const newNums = number.filter( (num) => num > 4);
-console.log(newNums);
+   const newNum = number.filter( (num) => num > 4);
+console.log(newNum);
+console.log(number);
 // +++++++++++++++++  gives []
 let number1 = [1, 2, 3, 4, 5, 6, 7]
  const newNums1 = number1.filter( (num) => {num > 4});

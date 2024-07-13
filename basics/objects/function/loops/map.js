@@ -6,7 +6,9 @@ console.log(newNums);
 // ++++
 let number1 = [1, 2, 3, 4, 5, 6, 7]
  const newNums1 = number1.map( (num) => num + 10);
+ number1 = number1.map( (num) => num + 10);
 console.log(newNums1);
+console.log(number1);
 // ++++++++
 let number2 = [1, 2, 3, 4, 5, 6, 7]
  const newNums2 = number2.map( (num) =>{ return num + 10});
